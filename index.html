@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick and Morty</title>
-  </head>
-  <body>
-    <h1>Rick and Morty Explorer</h1>
-    <div id="app"></div>
-    <div id="characters-container"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Recuadro con glow animado -->
+  <div class="header-box">
+    <div class="header-content">
+      <img src="./img/greenpotion.png" alt="Poción verde" class="potion-icon" />
+      <h1 class="glow-title">Rick and Morty Explorer</h1>
+    </div>
+    <p class="subtitle">¡Bienvenido a la app de Rick and Morty!</p>
+  </div>
+
+  <div class="controls">
+    <label for="search">Buscar personaje:</label>
+    <input type="text" id="search" placeholder="Ej: Rick, Morty...">
+  </div>
+  
+  <div class="controls">
+  <label for="filter-species">Filtrar por especie:</label>
+  <select id="filter-species">
+    <option value="all">Todas</option>
+    <option value="Human">Humano</option>
+    <option value="Alien">Alien</option>
+    <option value="Robot">Robot</option>
+  </select>
+
+  <label for="sort-name">Ordenar por nombre:</label>
+  <select id="sort-name">
+    <option value="asc">A-Z</option>
+    <option value="desc">Z-A</option>
+  </select>
+</div>
+
+  <!-- Contenedor de personajes -->
+  <div id="characters-container"></div>
+
+  <!-- Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
 
