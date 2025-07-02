@@ -17,32 +17,47 @@
     <p class="subtitle">¡Bienvenido a la app de Rick and Morty!</p>
   </div>
 
+  <!-- Controles de búsqueda y filtros -->
   <div class="controls">
     <label for="search">Buscar personaje:</label>
     <input type="text" id="search" placeholder="Ej: Rick, Morty...">
   </div>
   
   <div class="controls">
-  <label for="filter-species">Filtrar por especie:</label>
-  <select id="filter-species">
-    <option value="all">Todas</option>
-    <option value="Human">Humano</option>
-    <option value="Alien">Alien</option>
-    <option value="Robot">Robot</option>
-  </select>
+    <label for="filter-species">Filtrar por especie:</label>
+    <select id="filter-species">
+      <option value="all">Todas</option>
+      <option value="Human">Humano</option>
+      <option value="Alien">Alien</option>
+      <option value="Robot">Robot</option>
+    </select>
 
-  <label for="sort-name">Ordenar por nombre:</label>
-  <select id="sort-name">
-    <option value="asc">A-Z</option>
-    <option value="desc">Z-A</option>
-  </select>
-</div>
+    <label for="sort-name">Ordenar por nombre:</label>
+    <select id="sort-name">
+      <option value="asc">A-Z</option>
+      <option value="desc">Z-A</option>
+    </select>
+  </div>
 
   <!-- Contenedor de personajes -->
   <div id="characters-container"></div>
+
+  <!-- Contenedor completo de paginación -->
+  <div class="pagination">
+
+    <!-- Navegación con botones -->
+    <div class="pagination-nav">
+      <button id="prevBtn" class="pagination-btn" disabled>Anterior</button>
+      <span id="pageInfo" class="pagination-info">Página 1 de 42</span>
+      <button id="nextBtn" class="pagination-btn">Siguiente</button>
+    </div>
+
+    <!-- Botones numerados -->
+    <div id="pagination-numbers" class="pagination-numbers"></div>
+
+  </div>
 
   <!-- Script -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
-
