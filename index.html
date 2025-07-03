@@ -12,31 +12,35 @@
   <div class="header-box">
     <div class="header-content">
       <img src="./img/greenpotion.png" alt="Poción verde" class="potion-icon" />
-      <h1 class="glow-title">Rick and Morty Explorer</h1>
+      <h1 class="glow-title">RICK and Morty</h1>
     </div>
-    <p class="subtitle">¡Bienvenido a la app de Rick and Morty!</p>
+    <p class="subtitle">¡Bienvenido a la APP de Rick and Morty!</p>
   </div>
 
   <!-- Controles de búsqueda y filtros -->
-  <div class="controls">
-    <label for="search">Buscar personaje:</label>
-    <input type="text" id="search" placeholder="Ej: Rick, Morty...">
-  </div>
-  
-  <div class="controls">
-    <label for="filter-species">Filtrar por especie:</label>
-    <select id="filter-species">
-      <option value="all">Todas</option>
-      <option value="Human">Humano</option>
-      <option value="Alien">Alien</option>
-      <option value="Robot">Robot</option>
-    </select>
+  <div class="filters-wrapper">
+    <div class="control">
+      <label for="search">Buscar personaje:</label>
+      <input type="text" id="search" placeholder="Ej: Rick, Morty..." />
+    </div>
 
-    <label for="sort-name">Ordenar por nombre:</label>
-    <select id="sort-name">
-      <option value="asc">A-Z</option>
-      <option value="desc">Z-A</option>
-    </select>
+    <div class="control">
+      <label for="filter-species">Filtrar por especie:</label>
+      <select id="filter-species">
+        <option value="all">Todas</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Robot">Robot</option>
+      </select>
+    </div>
+
+    <div class="control">
+      <label for="sort-name">Ordenar por nombre:</label>
+      <select id="sort-name">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+      </select>
+    </div>
   </div>
 
   <!-- Contenedor de personajes -->
